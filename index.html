@@ -1,33 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
 
-  Equilibrium #3429
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Our Equilibrium collection promotes balance and calm.
+    <title>Daniel O'Brien | NFT preview card component</title>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="card">
+        <div class="img-container">
+          <img src="./images/image-equilibrium.jpg" alt="" />
+          <div class="img-hover">
+            <div class="background"></div>
+            <img src="./images/icon-view.svg" alt="" />
+          </div>
+        </div>
+        <h2 class="card-title txt-heading">Equilibrium #3429</h2>
+        <p class="card-text txt-body">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="stats-container">
+          <div class="eth">
+            <img src="./images/icon-ethereum.svg" alt="" />
+            <p class="txt-caption-bold">0.041 ETH</p>
+          </div>
+          <div class="timer">
+            <img src="./images/icon-clock.svg" alt="" />
+            <p class="txt-caption">3 days left</p>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="profile-container">
+          <img
+            src="./images/image-avatar.png"
+            alt="Man looking at camera, face half in shadow"
+          />
+          <p class="txt-caption">
+            Creation of <span class="txt-caption-bold">Jules Wyvern</span>
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="www.dobrien.ie">Daniel O'Brien</a>.
+    </div>
+  </body>
 </html>
